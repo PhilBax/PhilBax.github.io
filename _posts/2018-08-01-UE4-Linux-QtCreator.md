@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Working with UE4 on Linux using Qt Creator"
 categories: ue4 linux
 ---
