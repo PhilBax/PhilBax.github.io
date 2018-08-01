@@ -6,7 +6,7 @@ title: "Working with UE4 on Linux using Qt Creator"
 categories: ue4 linux
 ---
 
-# Intro
+## Intro
 
 I'll start by pointing out that Epic already has a guide to [using Qt Creator for UE4](https://docs.unrealengine.com/en-us/Platforms/Linux/BeginnerLinuxDeveloper/SettingUpQtCreator). However, I found a few things lacking in that guide. This is my attempt to improve upon it.
 
@@ -14,7 +14,7 @@ This guide assumes you're able to build and run UE4 outside of Qt Creator. For t
 
 This guide will not cover things like downloading source or resolving dependency issues specific to your Linux distribution. For that, I recommend looking over Epic's documentation on [building](https://wiki.unrealengine.com/Building_On_Linux) and [running](https://wiki.unrealengine.com/Running_On_Linux) on Linux.
 
-# Qt Creator Overview
+## Qt Creator Overview
 
 ![Overview]({{ "/assets/qtcreator/qt_overview.png" | absolute_url }})
 
@@ -37,7 +37,7 @@ There are several IDEs on Linux that work with Unreal Engine 4. These are some o
 * Have to manually set up build/run options on each machine. These are stored in a per-user settings file, tied to a specific build "Kit", and aren't distributable across a team.
 * No C# support.
 
-# Install
+## Install
 
 Your Linux distro may come with a version of Qt Creator, and it may be perfectly fine to use that version. If you want to stay up-to-date with the most recent version of Qt Creator, you can download and install it from <https://www.qt.io/download>. I recommend installing both Qt Creator and the latest Qt. If you use an older version, the UI may be slightly different from the images below.
 Setup
@@ -46,7 +46,7 @@ Setup
 
 The first time you load, it will ask you to choose a kit. The default "Desktop" kit should be fine. Go ahead and click **Configure Project**.
 
-# Build Settings
+## Build Settings
 
 1. Click on the Projects icon in the left bar.
 2. Under Build & Run, choose the Desktop kit's Build tab.
@@ -71,7 +71,7 @@ That's all you need to get building! If you want to set up the other build optio
 | MyGame (Test) | MyGame-Linux-Test | Builds the standalone game in test mode (shipping mode + dev console and a few dev tools) |
 | MyGame (Shipping) | MyGame-Linux-Shipping | Builds the standalone game in shipping mode (no cheats/dev tools). |
 
-# Run Settings
+## Run Settings
 
 1. Navigate to the Run settings.
 2. Rename the default Run configuration to MyGameEditor. We'll use it as a template for the other configurations
@@ -93,9 +93,9 @@ That's all you need to get running! If you want to set up the other build option
 | MyGame (Test) | %{sourceDir}/Projects/MyGame/Binaries/Linux/MyGame-Linux-Test | |
 | MyGame (Shipping) | %{sourceDir}/Projects/MyGame/Binaries/Linux/MyGame-Linux-Shipping |
 
-# Debug Settings
+## Debug Settings
 
-## Pretty Printers
+### Pretty Printers
 
 Epic distributes "pretty printers" for GDB, which provide visualizers for some of their native data types (like the .natvis file does for Visual Studio). For example, with pretty printers enabled, GDB displays the textual content of the FString instead of the underlying memory allocator information.
 
@@ -107,7 +107,7 @@ Also note that there is a bug with pretty printers in the current version of Qt 
 
 Finally, to enable pretty printers, go to Tools → Options → Debugger → GDB, and check Load system GDB pretty printers.
 
-# General Settings
+## General Settings
 
 * To use tabs instead of spaces:
   * In the Options navigate to C++ → Code Style
@@ -116,11 +116,11 @@ Finally, to enable pretty printers, go to Tools → Options → Debugger → GDB
   * Do the same (Tabs Only; Tab size: 4; Indent size: 4; "With Regular Indent") under Text Editor → Behavior to adjust behavior for non-C++ files.
 * Under Options, navigate to C++ → File naming and uncheck Lower case file names. Otherwise, when you create a file, it will ignore your casing.
 
-## Snippets
+### Snippets
 
 I've created some Qt Creator snippets to aid in UE4 development. They can be found [here](https://github.com/PhilBax/QtCreator-Unreal-Snippets).
 
-# Use
+## Use
 
 The bottom of the left-hand toolbar has the build/run/debug buttons. The icon at the top lets you choose which configuration to build and run (similar to XCode).
 
@@ -133,7 +133,7 @@ The visual debugger should be fairly intuitive.
 
 To interact directly with GDB via the command line, go to Window → Views → Debugger Log. The left column allows you to enter commands. The right column shows output.
 
-# Pro Tips
+## Pro Tips
 
 * The "project" will not save which windows were open last. Every time you reopen the project, you will be starting fresh. To restore opened windows, you need to create a "session", and open that when you restart QtCreator. To create a session:
   1. Go to File → Sessions → Manage...
@@ -155,7 +155,7 @@ To interact directly with GDB via the command line, go to Window → Views → D
   * I'd recommend including at least the following extensions: *.ini, *.cpp, *.h, *.inl, *.cs
   * If you're searching for shader-related code, you'll want to add: *.usf, *.ush
 
-# Conclusion
+## Conclusion
 
 I hope this guide will prove useful to UE4 developers working on Linux. There are several small issues and annoyances I've come across, but having a good IDE and debugger makes life a good bit easier.
 
