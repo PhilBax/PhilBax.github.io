@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Phillip Baxter"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/ProfilePic.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
   location         : ""
   email            :
