@@ -1,5 +1,6 @@
 ---
 layout: single
+class: wide
 title: "Working with UE4 on Linux using Qt Creator"
 categories: ue4 linux
 ---
