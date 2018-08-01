@@ -1,0 +1,5 @@
+main:
+  - title: "About"
+    url: /_pages/about.md
+  - title: "Contact"
+    url: /_pages/contact.md
