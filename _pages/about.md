@@ -20,12 +20,12 @@ In 2005, I started working part-time at Redstone Arsenal, developing training so
 
 In 2007, I graduated with a B.S. in Computer Science from the University of Alabama in Huntsville, and took a full-time position at the Army Game Studio, contracting through SAIC.
 
-I was able to put this experience to use in helping wrap up development on America's Army 3 in 2009, and I learned a lot more in the process. There's a big difference between working on trainers in a LAN environment and a video game in an internet environment!
+I was able to put my experience to use in helping wrap up development on America's Army 3 in 2009, and I learned a lot more in the process. There's a big difference between working on trainers in a LAN environment and a video game in an internet environment!
 
-When we started America's Army: Proving Grounds, I initially headed up the weapons and attachments code. As time went on, and people shifted away from the project, I got to touch more and more systems. Eventually, I became Lead Programmer on the project, and took over management of our build servers and distribution path. I was able to reduce our build times by over half, and our average patch size on Steam from ~1.2GB to around 300MB.
+When we started America's Army: Proving Grounds, I initially headed up the weapons and attachments code. As time went on, and people shifted away from the project, I got to touch more and more systems. Eventually, I became Lead Programmer on the project, and took over management of our build servers and distribution path. I was able to reduce our build times by over 50%, and our average patch size on Steam from ~1.2GB to around 300MB.
 
-Towards the end of my work on the PC game, I worked on porting the game to other platforms. I did some work on the Mac port, which we nearly finished, but couldn't get the performance where we wanted it. I also worked on porting the server to Linux. Once we got cleared to port to PS4, I worked on a lot of the matchmaking and server management code.
+Towards the end of my work on the PC game, I worked on porting the game to other platforms. I did some work on the Mac port, which we nearly finished, but couldn't get the performance where we wanted it. I also worked on porting our server code to Linux. Once we got cleared to port the game to PS4, I worked on a lot of the matchmaking and server management code, in addition to some rendering and performance work.
 
-My work on the Mac and PS4 was my first deep dive into Unreal's rendering code -- something that had intimidated me for years!
+My work on the Mac and PS4 was my first deep dive into Unreal's rendering code -- something that had intimidated me for years! I got to dig into shaders, and look at Epic's OpenGL renderer.
 
-In 2018, I parted ways with the Army Game Studio, and took a position with Torch Technologies. I'm currently developing scene generators in Unreal Engine 4, which is putting my more recent experience with Linux and Unreal's rendering code to use. I'm also gaining a lot of experience with Git.
+In 2018, I parted ways with the Army Game Studio, and took a position with Torch Technologies. I'm currently developing scene generators in Unreal Engine 4, which is putting my Linux and Unreal rendering experience to good use. I'm also gaining a lot of experience with Git.
