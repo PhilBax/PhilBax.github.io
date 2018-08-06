@@ -4,6 +4,7 @@ classes: wide
 toc: true
 title: "Working with UE4 on Linux using Qt Creator"
 categories: ue4 linux
+excerpt: "Guide to setting up Qt Creator on Linux to work with your Unreal Engine 4 project."
 ---
 
 ## Intro
