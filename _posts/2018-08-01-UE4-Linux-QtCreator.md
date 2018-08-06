@@ -1,5 +1,6 @@
 ---
 layout: single
+date: 2018-08-01 12:00:00 -0600
 classes: wide
 toc: true
 title: "Working with UE4 on Linux using Qt Creator"
