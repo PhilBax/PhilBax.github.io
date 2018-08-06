@@ -2,8 +2,6 @@
 permalink: /about/
 ---
 
-# About
-
 ## About This Site
 
 The goal of this site is to share solutions to interesting problems I come across, quality-of-life improvements I discover or develop, and interesting tools and ideas I learn about. It will likely focus on UE4 development in Linux, as that's what I'm actively working on.
