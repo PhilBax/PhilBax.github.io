@@ -12,7 +12,7 @@ The site uses the Jekyll processing built into GitHub, and makes use of the exce
 
 ## About Me
 
-![Profile]({{ "/assets/ProfilePic.jpg" | absolute_url }})
+![Profile]("/assets/ProfilePic.jpg"){:class="img-responsive"}
 
 I started programming when I was 10, learning from library books, and using QBasic on our family's P90 computer. From there, I taught myself C and C++ (an ongoing process). I have some experience with Java and C#, and I'm finding I really enjoy Python.
 
