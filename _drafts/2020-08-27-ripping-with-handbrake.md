@@ -10,21 +10,21 @@ excerpt: "How to set up and use Handbrake to rip discs."
 
 ## Intro
 
-This guide will walk you through ripping movies and TV series with Handbrake. It will cover lessons, workarounds, and pitfalls I've come across over the years. It will walk you through ripping both DVDs and Blu-rays, which you can then use on your phone, tablet, or home theater PC, or to play through your media player or streamer of choice (Kodi, Plex, Emby, etc.).
+This guide covers ripping discs with Handbrake.
 
 ## Note
 
-It's important to note right off the bat that both ripping copyrighted content, even for backup purposes, is *illegal* in the US (unlike ripping backups of CDs). Please be aware of this, and rip responsibly.
+It's important to note right off the bat that ripping copyrighted content, even for backup purposes, is *illegal* in the US (unlike ripping backups of CDs). Please be aware of this, and rip responsibly.
 
 ## Requirements
 
-I run a Windows computer at home, but most of this should work on Mac as well.
+* This guide will only cover Windows, as that's what I run at home.
 
-You'll need at least one DVD drive to rip DVD discs, and a Blu-ray drive to rip Blu-ray discs. If you have multiple disc drives, you can build up a queue of items to rip and leave your computer to do the work.
+* You'll need at least one DVD drive to rip DVD discs. A Blu-ray drive can rip Blu-rays and DVDs. Some Blu-ray drives can be configured to rip 3D Blu-ray discs. However 4K/UHD discs are a different format, and require another type of drive. I have no experience ripping UHD, so it will be ignored in this guide.
 
-You'll want a fairly beefy CPU (or a lot of patience!), particularly if you're ripping Blu-ray discs. The processor is going to be your main bottleneck.
+* You'll want a fairly beefy CPU (or a lot of patience!), particularly if you're ripping Blu-ray discs. The processor is going to be your main bottleneck.
 
-You'll need a lot of disc space, depending on how much you're ripping and what your settings are. With my settings, an average movie on DVD takes up around 800 MB - 1.2 GB, and a Blu-ray movie can easily be 3-5 GB.
+* You'll need a lot of disc space, depending on how much you're ripping and what your settings are. With my settings, an average movie on DVD takes up around 800 MB - 1.2 GB, and a Blu-ray movie can easily be 3-5 GB.
 
 
 ## Setup
@@ -45,4 +45,10 @@ You can use MakeMKV to load and rip the discs losslessly to .mkv files, and then
 
 Alternatively, you can use MakeMKV work as the decrypter for Handbrake directly. This can be done in the software under `Preferences > Integration`, or you can manually copy `libmmbd.dll` into the Handbrake directory and rename it to `libaacs.dll`, duplicate it, and rename the copy to `libbdplus.dll`.
 
-## 
+## Settings
+
+## Workflow
+
+## Problems
+
+## Conclusion
