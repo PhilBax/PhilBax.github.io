@@ -20,6 +20,12 @@ In 2018, I took a position at Torch Technologies. I developed a scene generator 
 
 These days, I've gone back to game development and am working at Traega Entertainment.
 
+## Contact
+
+If you'd like to reach out to me about a specific post, feel free to leave a comment. I welcome any feedback!
+
+Otherwise, the best way to reach me is probably via LinkedIn.
+
 ## About This Site
 
 The site uses Jekyll on GitHub Pages, and makes use of the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme.
