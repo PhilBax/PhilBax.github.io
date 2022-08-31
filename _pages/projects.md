@@ -4,7 +4,8 @@ permalink: /projects/
 
 ## Aegis Descent
 *Traega Entertainment – 2021-2022*\
-![RD]("/assets/projects/rd.jpg){:class="img-responsive"}\
+![RD](/assets/projects/rd.jpg){:class="img-responsive"}\
+[Steam](https://store.steampowered.com/app/1251040/Aegis_Descent/) [Epic](https://store.epicgames.com/en-US/p/aegis-descent-a1f5a0)
 Roguelite vehicle-based shooter set in WW2 era.
 - Created subsystem for capturing player stats.
 - Created awards system for granting achievements based on stats, and giving unlocks based on accumulated award score.
@@ -16,7 +17,7 @@ Roguelite vehicle-based shooter set in WW2 era.
 
 ## R&D Project
 *Torch Technologies – 2019-2021*
-![RD]("/assets/projects/rd.jpg){:class="img-responsive"}\
+![RD](/assets/projects/rd.jpg){:class="img-responsive"}\
 Research towards government product
 - Created a tool to generate an accurate Earth ellipsoid in UE4. Ellipsoid utilized Blue Earth/Black Earth textures from NASA and Epic's Sky Atmosphere. Earth could be ellipsoidal or flat, and the origin could be at the center of the globe or at a specified LLA location.
 - Imported real-world terrain data, textured it, and oriented it on the Earth ellipsoid/plane.
@@ -34,7 +35,7 @@ Scene generator in UE4 that generated accurate IR scenery for training missile s
 
 ## America's Army Proving Grounds
 *SAIC/America's Army – 2010-2018*\
-![AA4]("/assets/projects/aa4.jpg){:class="img-responsive"}\
+![AA4](/assets/projects/aa4.jpg){:class="img-responsive"}\
 [Steam](https://store.steampowered.com/app/203290/Americas_Army_Proving_Grounds/)
 
 - Responsible for weapon and combat code. Created inventory system. Created client and server hit detection systems. Created mirroring of pawn and weapon classes (so you always see your team as good guys and the other team as bad guys).
@@ -50,7 +51,7 @@ Scene generator in UE4 that generated accurate IR scenery for training missile s
 
 ## America's Army 3
 *SAIC/America's Army – 2009-2010*\
-![AA3]("/assets/projects/aa3.jpg){:class="img-responsive"}
+![AA3](/assets/projects/aa3.jpg){:class="img-responsive"}
 
 - Co-designed and implemented sweeping changes to the injury and medic systems.
 - Worked with Senior Designer and artists to redesign the HUD.
@@ -128,7 +129,7 @@ Project to simulate an incoming attack and allow operator to command missile-bas
 - Integrated and expanded on the minimap initially created for the IWS.
 
 ### TRICT Rollover Trainer: 
-![MRAP]("/assets/projects/mrap-rollover.jpg"){:class="img-responsive"}\
+![MRAP](/assets/projects/mrap-rollover.jpg){:class="img-responsive"}\
 [Article 1](https://www.army.mil/article/56674/soldiers_flip_over_realistic_training_vehicle) [Article 2](https://www.waff.com/story/21890549/redstone-report-rollover-training-with-simulation-software/)
 
 Trainer that put soldiers into surprise "roll-over events" so they could train exiting the MRAP while it is upside down.

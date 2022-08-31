@@ -4,7 +4,7 @@ permalink: /about/
 
 ## About Me
 
-![Profile]("/assets/ProfilePic.jpg"){:class="img-responsive"}
+![Profile](/assets/ProfilePic.jpg){:class="img-responsive"}
 
 I've been programming in Unreal Engine professionally since 2005. Initially, I developed training and simulation software based on the America's Army PC game (UE2). I gained experience in a wide range of systems, including weapons and ballistics, vehicle physics, AI, UI, input device, tools, and network code. 
 
