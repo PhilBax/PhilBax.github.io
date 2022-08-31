@@ -4,7 +4,7 @@ permalink: /projects/
 
 ## Aegis Descent
 *Traega Entertainment – 2021-2022*\
-![RD](/assets/projects/rd.jpg){:class="img-responsive"}\
+![RD](/assets/projects/aegisdescent.jpg){:class="img-responsive"}\
 [Steam](https://store.steampowered.com/app/1251040/Aegis_Descent/) [Epic](https://store.epicgames.com/en-US/p/aegis-descent-a1f5a0)
 Roguelite vehicle-based shooter set in WW2 era.
 - Created subsystem for capturing player stats.
