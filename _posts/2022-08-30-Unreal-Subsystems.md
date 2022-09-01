@@ -1,7 +1,5 @@
 ---
-layout: single
 date: 2022-08-30 12:00:00 -0600
-classes: wide
 toc: true
 title: "Writing Unreal Subsystems"
 categories: ue4 ue5 unreal

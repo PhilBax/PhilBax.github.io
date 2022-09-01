@@ -18,10 +18,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "en-US"
 title                    : "Random Segments of Code"
 title_separator          : "-"
-name                     : "Blah"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+name                     : ""
+description              : ""
+url                      : "https://phillipbaxter.com"
+baseurl                  : "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -70,7 +70,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : 
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -103,7 +103,7 @@ author:
   name             : "Phillip Baxter"
   avatar           : "/assets/ProfilePic.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
-  location         : 
+  location         : "Huntsville, AL"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
@@ -274,5 +274,6 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
+      toc: true
       share: true
       related: true
