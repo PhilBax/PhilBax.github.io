@@ -4,9 +4,6 @@ toc: true
 title: "Writing Unreal Subsystems"
 categories: ue4 ue5 unreal
 excerpt: "Benefits of writing Subsystems in Unreal, and pitfalls to be aware of."
-header:
-	overlay_image: /assets/subsystem/header.jpg
-	caption: engine-subsystem-source
 ---
 
 ## Intro
