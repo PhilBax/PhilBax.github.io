@@ -63,6 +63,7 @@ In Python, you can access engine and editor subsystems via `unreal.get_engine_su
 In Blueprint, subsystems can be acquired globally.
 
 ![bp1](/assets/subsystems/bp-1.jpg)
+
 ![bp2](/assets/subsystems/bp-2.jpg)
 
 Note that I don't believe AudioEngineSubsystems can be accessed from Blueprints.
