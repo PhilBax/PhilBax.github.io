@@ -4,32 +4,76 @@ toc: true
 title: "Writing Unreal Subsystems"
 categories: ue4 ue5 unreal
 excerpt: "Benefits of writing Subsystems in Unreal, and pitfalls to be aware of."
+header:
+	overlay_image: /assets/subsystem/header.jpg
+	caption: engine-subsystem-source
 ---
 
-# Subsystems
+## Intro
 
-Unreal now has support for creating a variety of "subsystems". These are specialized objects with automatically-managed lifetimes and easy accessibility from blueprints. They are often a great solution for what might otherwise be implemented as a Singleton or a vanilla subject. They're perfect are for separating out and modularizing functionality away from main system subclasses like GameMode or GameInstance, keeping those subclasses from becoming bloated.
+Unreal now has support for creating "subsystems" – specialized objects with automatically-managed lifetimes and easy accessibility from blueprints and Python. They're perfect for separating and modularizing functionality that might otherwise bloat main system subclasses like GameMode or GameInstance. In fact, they can prevent you from even needing to subclass those objects at all!
 
-This post will go over a brief introduction to using subsystems, and then dive into some caveats and potential workarounds. 
+They're generally used as singletons, but there is at least partial support for arrays of subsystems.
 
-## Introduction
+### Types of Subsystems
 
-Epic already provides a [good introduction](https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/Subsystems/) to subsystems.
+Epic already has a [good, if brief, introduction](https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/Subsystems/) to subsystems.
 
-To summarize, you can create subsystems for:
-- the Engine
-- the GameInstance
-- the LocalPlayer
-- the Editor
-- the [World](https://docs.unrealengine.com/4.27/en-US/API/Runtime/Engine/Subsystems/UWorldSubsystem/) (this one is not mentioned in the Programming Subsystems)
+To summarize, you can create subsystems for a number of system classes, including:
+- UEngine
+- UGameInstance
+- ULocalPlayer
+- UEditorEngine
+- [UWorld](https://docs.unrealengine.com/4.27/en-US/API/Runtime/Engine/Subsystems/UWorldSubsystem/)*
+- FAudioDevice* (via `UAudioEngineSubsystem`)
 
-Each subsystem has automatic lifetime management -- the owning class automatically creates and destroys their subsystems, and calls virtual initialize/deinitialize functions on them. Each owning class also provides easy getters for their subsystems by type in both C++ and blueprint. 
+\**not mentioned in Epic's subsystem documentation*
 
-They are very useful tools, and you can find many good examples of subsystems in the codebase.
+Subsystems have automatic lifetime management: the owning class automatically creates and destroys subsystems, and calls virtual initialize/deinitialize functions on them. 
+
+### Accessors
+
+Subsystems are easily accessible from C++, Python, and Blueprint.
+
+#### C++ 
+
+In C++, there are a few ways to access subsystems:
+
+The main option I use is templated getters. `UGameInstance`, `ULocalPlayer`, `UWorld`, and `FAudioDevice` all provide templated `GetSubsystem()` functions:
+
+```
+UAssetTagsSubsystem* AssetTagSub = GEngine->GetSubsystem<UAssetTagsSubsystem>();
+```
+
+(These classes also provide static versions of these functions, but you must pass in the object you want to get the subsystem for, e.g. `UEngine::GetSubsystem<UAssetTagsSubsystem>(GEngine)`)
+
+UEditor Subsystems can be acquired through a templated `GetEditorSubsystem()`. 
+
+Alternatively, you could use `Get[Editor]SubsystemBase()` and pass in the UClass of the subsystem you want:
+
+```
+UAssetTagsSubsystem* AssetTagSub = GEngine->GetSubsystemBase(UAssetTagsSubsystem::StaticClass());
+```
+
+Finally, if your feature is implemented as an array of multiple subsystems instead of a singleton, you can use a templated `Get[Editor]SubsystemArray()` to grab all of them.
+
+#### Python
+
+In Python, you can access engine and editor subsystems via `unreal.get_engine_subsystem()` and `unreal.get_editor_subsystem()`.
+
+#### Blueprint
+
+In Blueprint, subsystems can be acquired globally.
+
+![bp1](/assets/subsystems/bp-1.jpg)
+![bp2](/assets/subsystems/bp-2.jpg)
+
+Note that I don't believe AudioEngineSubsystems can be accessed from Blueprints.
+
 
 ## Caveats
 
-There are some issues you may run into that the documentation fails to mention.
+As you go about developing your own subsystems, there are some issues you may run into that the documentation fails to mention.
 
 ### 1. Engine subsystem have Editor lifetime in PIE
 
@@ -95,6 +139,8 @@ Alternatively, you might decide that this justifies moving your class away from 
 
 ## Conclusion
 
-I hope this provides some insight into some aspects of Subsystems you might not have been aware of. They are very useful tools, and I've started using them for more and more standalone features.
+Subsystems are very useful tools. I've been using them more and more for modular bits of functionality. You can find many good examples of them throughout Epic's codebase as well.
 
-Have you run into any issues I haven't mentioned here? Please get in touch!
+I hope this provides some insight into some aspects of Subsystems you might not have been aware of.
+
+Have you run into any issues I haven't mentioned here?
