@@ -3,29 +3,38 @@ permalink: /projects/
 ---
 
 ## Aegis Descent
-*Traega Entertainment – 2021-2022*\
-![RD](/assets/projects/aegisdescent.jpg){:class="img-responsive"}\
-[Steam](https://store.steampowered.com/app/1251040/Aegis_Descent/) [Epic](https://store.epicgames.com/en-US/p/aegis-descent-a1f5a0)\
+*Traega Entertainment – 2021-2022*
+
+![RD](/assets/projects/aegisdescent.jpg){:class="img-responsive"}
+
+[Steam](https://store.steampowered.com/app/1251040/Aegis_Descent/) [Epic](https://store.epicgames.com/en-US/p/aegis-descent-a1f5a0)
+
 Roguelite vehicle-based shooter set in WW2 era.
+
 - Created subsystem for capturing player stats.
 - Created awards system for granting achievements based on stats, and giving unlocks based on accumulated award score.
 - Fleshed out support for 'perks' that modify the player's base stats.
-- Built a new objective system with support for multiple objective types and capturing and displaying progress on the HUD.
+- Built a new objective system with support for multiple objective types and reporting progress to the HUD.
 - Developed a basic "New User Experience" popup system to introduce players to the game.
 - Tracked down some performance issues to reach target framerate on our minspec machine.
 - Integrated with EOS for Epic Games Store achievements.
 
 ## R&D Project
 *Torch Technologies – 2019-2021*
+
 ![RD](/assets/projects/rd.jpg){:class="img-responsive"}\
+
 Research towards government product
+
 - Created a tool to generate an accurate Earth ellipsoid in UE4. Ellipsoid utilized Blue Earth/Black Earth textures from NASA and Epic's Sky Atmosphere. Earth could be ellipsoidal or flat, and the origin could be at the center of the globe or at a specified LLA location.
 - Imported real-world terrain data, textured it, and oriented it on the Earth ellipsoid/plane.
 - Worked on plugin that interfaced with KDIS and to receive DIS packets and create/position/orient/animate entities appropriately in-game.
 
 ## Synthetic Environment Generator (SEG)
 *Torch Technologies – 2018-2019*
+
 Scene generator in UE4 that generated accurate IR scenery for training missile sensors
+
 - Wrote importers for IR terrain and models (static and skeletal).
 - Delved into the renderer to ensure we got nearly 1-1 pixel parity with two existing IR scene generators. 
 - Created the ability to have different missile sensors see only the visual data that pertains to them.
@@ -34,8 +43,11 @@ Scene generator in UE4 that generated accurate IR scenery for training missile s
 - Worked exclusively in CentOS Linux.
 
 ## America's Army Proving Grounds
-*SAIC/America's Army – 2010-2018*\
-![AA4](/assets/projects/aa4.jpg){:class="img-responsive"}\
+
+*SAIC/America's Army – 2010-2018*
+
+![AA4](/assets/projects/aa4.jpg){:class="img-responsive"}
+
 [Steam](https://store.steampowered.com/app/203290/Americas_Army_Proving_Grounds/)
 
 - Responsible for weapon and combat code. Created inventory system. Created client and server hit detection systems. Created mirroring of pawn and weapon classes (so you always see your team as good guys and the other team as bad guys).
@@ -50,7 +62,8 @@ Scene generator in UE4 that generated accurate IR scenery for training missile s
 - Finished porting the game server to Linux. Wrote scripts to deploy and run multiple servers on AWS boxes.
 
 ## America's Army 3
-*SAIC/America's Army – 2009-2010*\
+*SAIC/America's Army – 2009-2010*
+
 ![AA3](/assets/projects/aa3.jpg){:class="img-responsive"}
 
 - Co-designed and implemented sweeping changes to the injury and medic systems.
