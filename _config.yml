@@ -98,6 +98,8 @@ author:
 include:
   - .htaccess
   - _pages
+
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
