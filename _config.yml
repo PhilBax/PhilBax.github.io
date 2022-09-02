@@ -100,7 +100,6 @@ include:
   - _pages
   - jekyll-paginate
   - jekyll-sitemap
-  
   - jekyll-feed
   - jekyll-include-cache
 
