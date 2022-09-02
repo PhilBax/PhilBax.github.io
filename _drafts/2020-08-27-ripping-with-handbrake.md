@@ -1,5 +1,4 @@
 ---
-layout: single
 date: 2020-08-27 12:00:00 -0600
 classes: wide
 toc: false
