@@ -117,7 +117,7 @@ A small project that simulated the workload of operating the MULE unmanned groun
 - Integrated DirectX device with Unreal. Allowed creation of route for vehicle to follow via a touchscreen and stylus.
 - Created custom driving AI for the vehicle.
 
-### RRM/SMAW-D Missile
+### BDM/SMAW-D Missile
 Small project that integrated with a physical shoulder-mounted launcher, and let you fire it at targets on a projected screen (think Duck Hunt).
 - Created handheld weapon with ballistically-accurate physics.
 - Created UI and flow to get you into the scenario.
