@@ -1,11 +1,11 @@
 ---
-layout: single
 date: 2018-08-01 12:00:00 -0600
-classes: wide
 toc: true
 title: "Working with UE4 on Linux using Qt Creator"
 categories: ue4 linux
 excerpt: "Guide to setting up Qt Creator on Linux to work with your Unreal Engine 4 project."
+header:
+   teaser: /assets/qtcreator/qt_overview.png
 ---
 
 ## Intro
