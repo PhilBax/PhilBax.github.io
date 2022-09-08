@@ -120,3 +120,4 @@ defaults:
       toc: true
       share: true
       related: true
+      permalink: /:categories/:year/:title.html
