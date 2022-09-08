@@ -1,7 +1,6 @@
 ---
 date: 2020-08-27 12:00:00 -0600
 classes: wide
-toc: false
 title: "How to Rip with Handbrake"
 categories: plex ripping handbrake
 excerpt: "How to set up and use Handbrake to rip discs."
